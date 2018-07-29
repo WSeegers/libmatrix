@@ -6,7 +6,7 @@
 /*   By: wseegers <wseegers.mauws@gmail.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/29 00:16:55 by wseegers          #+#    #+#             */
-/*   Updated: 2018/07/29 01:45:16 by wseegers         ###   ########.fr       */
+/*   Updated: 2018/07/29 20:19:49 by wseegers         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -115,6 +115,19 @@ double vec3_length(t_vec3 v)
 	return (sqrt(x * x + y * y + z * z));
 }
 
+double vec3_length2(t_vec3 v)
+{
+	double x;
+	double y;
+	double z;
+
+	x = v.x;
+	y = v.y;
+	z = v.z;
+
+	return (x * x + y * y + z * z);
+}
+
 double vec3_dot(t_vec3 v, t_vec3 v2)
 {
 	return (v.x * v2.x + v.y * v2.y + v.z * v2.z);
@@ -165,4 +178,9 @@ double vec3_dist(t_vec3 v1, t_vec3 v2)
 	y = v2.y - v1.y,
 	z = v2.z - v1.z;
 	return sqrt(x*x + y*y + z*z);
+}
+
+void vec3_print(char *name, t_vec3 v)
+{
+	printf("%s: %f, %f, %f\n", name, v.x, v.y, v.z);
 }
