@@ -6,24 +6,18 @@
 /*   By: wseegers <wseegers.mauws@gmail.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/29 00:09:16 by wseegers          #+#    #+#             */
-/*   Updated: 2018/07/29 20:45:08 by wseegers         ###   ########.fr       */
+/*   Updated: 2018/08/04 22:26:06 by wseegers         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef MATRIX_H
 # define MATRIX_H
 
-#include <stddef.h>
-#include <stdlib.h>
-#include <math.h>
-#include <stdio.h> // remove
-
-typedef struct	s_vec3
-{
-	double x;
-	double y;
-	double z;
-}				t_vec3;
+# include <stddef.h>
+# include <stdlib.h>
+# include <math.h>
+# include <stdio.h> // remove
+# include "libmatrix.h"
 
 # define VEC3(x, y, z)		((t_vec3){(double)(x), (double)(y), (double)(z)})
 
@@ -43,6 +37,7 @@ double vec3_dot(t_vec3 v, t_vec3 v2);
 t_vec3 vec3_direction (t_vec3 v1, t_vec3 v2);
 t_vec3 vec3_lerp(t_vec3 v1, t_vec3 v2, double lerp);
 double vec3_dist(t_vec3 v1, t_vec3 v2);
-void vec3_print(char *name, t_vec3 v);
+t_vec3	vec3_transform(t_vec3 v, t_mat4 mat);
+void	vec3_print(char *name, t_vec3 v);
 
 #endif

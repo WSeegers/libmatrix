@@ -6,7 +6,7 @@
 /*   By: wseegers <wseegers.mauws@gmail.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/29 00:16:55 by wseegers          #+#    #+#             */
-/*   Updated: 2018/07/29 20:19:49 by wseegers         ###   ########.fr       */
+/*   Updated: 2018/08/04 22:51:39 by wseegers         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -183,4 +183,20 @@ double vec3_dist(t_vec3 v1, t_vec3 v2)
 void vec3_print(char *name, t_vec3 v)
 {
 	printf("%s: %f, %f, %f\n", name, v.x, v.y, v.z);
+}
+
+t_vec3	vec3_transform(t_vec3 v, t_mat4 mat)
+{
+	t_vec3	ret;
+	double	x;
+	double 	y;
+	double	z;
+	
+	x = v.x;
+	y = v.y;
+	z = v.z;
+	ret.x = mat.aa * x + mat.ab * y + mat.ac * z + mat.ad;
+	ret.y = mat.ba * x + mat.bb * y + mat.bc * z + mat.bd;
+	ret.z = mat.ca * x + mat.cb * y + mat.cc * z + mat.cd;
+	return (ret);
 }
