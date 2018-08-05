@@ -6,7 +6,7 @@
 /*   By: wseegers <wseegers.mauws@gmail.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/29 00:16:55 by wseegers          #+#    #+#             */
-/*   Updated: 2018/08/04 22:51:39 by wseegers         ###   ########.fr       */
+/*   Updated: 2018/08/05 21:37:21 by wseegers         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -199,4 +199,9 @@ t_vec3	vec3_transform(t_vec3 v, t_mat4 mat)
 	ret.y = mat.ba * x + mat.bb * y + mat.bc * z + mat.bd;
 	ret.z = mat.ca * x + mat.cb * y + mat.cc * z + mat.cd;
 	return (ret);
+}
+
+t_vec3	vec3_reflect(t_vec3 v, t_vec3 normal)
+{
+	return (vec3_subtract(v, vec3_scale(2 * vec3_dot(v, normal), normal)));
 }

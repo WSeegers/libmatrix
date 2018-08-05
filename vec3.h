@@ -6,7 +6,7 @@
 /*   By: wseegers <wseegers.mauws@gmail.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/29 00:09:16 by wseegers          #+#    #+#             */
-/*   Updated: 2018/08/04 22:26:06 by wseegers         ###   ########.fr       */
+/*   Updated: 2018/08/05 22:15:22 by wseegers         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ t_vec3 vec3_direction (t_vec3 v1, t_vec3 v2);
 t_vec3 vec3_lerp(t_vec3 v1, t_vec3 v2, double lerp);
 double vec3_dist(t_vec3 v1, t_vec3 v2);
 t_vec3	vec3_transform(t_vec3 v, t_mat4 mat);
+t_vec3	vec3_reflect(t_vec3 v, t_vec3 normal);
 void	vec3_print(char *name, t_vec3 v);
 
 #endif
