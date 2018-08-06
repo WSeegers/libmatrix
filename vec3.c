@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   vec3.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wseegers <wseegers.mauws@gmail.com>        +#+  +:+       +#+        */
+/*   By: wseegers <wseegers@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/29 00:16:55 by wseegers          #+#    #+#             */
-/*   Updated: 2018/08/05 21:37:21 by wseegers         ###   ########.fr       */
+/*   Updated: 2018/08/06 21:34:35 by wseegers         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -189,9 +189,9 @@ t_vec3	vec3_transform(t_vec3 v, t_mat4 mat)
 {
 	t_vec3	ret;
 	double	x;
-	double 	y;
+	double	y;
 	double	z;
-	
+
 	x = v.x;
 	y = v.y;
 	z = v.z;
@@ -201,7 +201,8 @@ t_vec3	vec3_transform(t_vec3 v, t_mat4 mat)
 	return (ret);
 }
 
-t_vec3	vec3_reflect(t_vec3 v, t_vec3 normal)
+t_vec3	vec3_reflect(t_vec3 i, t_vec3 normal)
 {
-	return (vec3_subtract(v, vec3_scale(2 * vec3_dot(v, normal), normal)));
+	normal = vec3_normalize(normal);
+	return (vec3_subtract(i, vec3_scale(2 * vec3_dot(i, normal), normal)));
 }
