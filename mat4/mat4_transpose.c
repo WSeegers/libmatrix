@@ -6,13 +6,13 @@
 /*   By: wseegers <wseegers@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/08 18:28:40 by wseegers          #+#    #+#             */
-/*   Updated: 2018/08/08 18:28:55 by wseegers         ###   ########.fr       */
+/*   Updated: 2018/08/08 21:28:50 by wseegers         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "mat4.h"
 
-t_mat4 mat4_transpose(t_mat4 mat)
+t_mat4	mat4_transpose(t_mat4 mat)
 {
 	t_mat4 ret;
 

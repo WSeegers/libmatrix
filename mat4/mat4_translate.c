@@ -6,12 +6,11 @@
 /*   By: wseegers <wseegers@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/08 18:42:54 by wseegers          #+#    #+#             */
-/*   Updated: 2018/08/08 18:43:35 by wseegers         ###   ########.fr       */
+/*   Updated: 2018/08/08 19:30:42 by wseegers         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "mat4.h"
-#include "vec3.h"
 
 t_mat4	mat4_translate(t_mat4 mat, t_vec3 v)
 {

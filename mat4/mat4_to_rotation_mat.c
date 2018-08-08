@@ -6,7 +6,7 @@
 /*   By: wseegers <wseegers@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/08 18:39:13 by wseegers          #+#    #+#             */
-/*   Updated: 2018/08/08 18:39:55 by wseegers         ###   ########.fr       */
+/*   Updated: 2018/08/08 21:27:34 by wseegers         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,5 @@ t_mat4	mat4_to_rotation_mat(t_mat4 mat)
 	mat.db = 0;
 	mat.dc = 0;
 	mat.dd = 1;
-
 	return (mat);
 }

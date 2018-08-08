@@ -6,7 +6,7 @@
 /*   By: wseegers <wseegers@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/04 14:35:41 by wseegers          #+#    #+#             */
-/*   Updated: 2018/08/08 19:26:06 by wseegers         ###   ########.fr       */
+/*   Updated: 2018/08/08 19:30:04 by wseegers         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,10 @@
 # define MAT4_H
 
 # include <stdlib.h>
+# include <math.h>
 # include "s_frustrum.h"
 # include "s_mat4.h"
+# include "../vec3/vec3.h"
 # include "../vec3/s_vec3.h"
 # include "../mat3/s_mat3.h"
 

@@ -6,7 +6,7 @@
 /*   By: wseegers <wseegers@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/08 18:52:30 by wseegers          #+#    #+#             */
-/*   Updated: 2018/08/08 18:54:30 by wseegers         ###   ########.fr       */
+/*   Updated: 2018/08/08 21:28:12 by wseegers         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,9 +40,9 @@ t_mat4	mat4_rotatey(t_mat4 mat, double angle)
 	double s;
 	double c;
 	double temp;
+
 	s = sin(angle);
 	c = cos(angle);
-
 	temp = mat.aa;
 	mat.aa = temp * c + mat.ca * -s;
 	mat.ca = temp * s + mat.ca * c;
@@ -63,9 +63,9 @@ t_mat4	mat4_rotatez(t_mat4 mat, double angle)
 	double s;
 	double c;
 	double temp;
+
 	s = sin(angle);
 	c = cos(angle);
-
 	temp = mat.aa;
 	mat.aa = temp * c + mat.ba * s;
 	mat.ba = temp * -s + mat.ba * c;

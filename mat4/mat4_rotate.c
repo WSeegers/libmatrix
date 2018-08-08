@@ -6,12 +6,11 @@
 /*   By: wseegers <wseegers@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/08 18:45:50 by wseegers          #+#    #+#             */
-/*   Updated: 2018/08/08 18:51:07 by wseegers         ###   ########.fr       */
+/*   Updated: 2018/08/08 19:30:12 by wseegers         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "mat4.h"
-#include "vec3.h"
 
 t_mat4	calculate(t_mat4 mat, t_mat3 rot)
 {

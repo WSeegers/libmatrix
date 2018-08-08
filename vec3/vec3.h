@@ -6,7 +6,7 @@
 /*   By: wseegers <wseegers@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/29 00:09:16 by wseegers          #+#    #+#             */
-/*   Updated: 2018/08/08 19:23:07 by wseegers         ###   ########.fr       */
+/*   Updated: 2018/08/08 21:27:04 by wseegers         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@
 
 typedef struct s_mat4	t_mat4;
 typedef struct s_vec3	t_vec3;
-
 
 # define VEC3(x, y, z)		((t_vec3){(double)(x), (double)(y), (double)(z)})
 

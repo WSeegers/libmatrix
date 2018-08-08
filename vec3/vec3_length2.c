@@ -6,7 +6,7 @@
 /*   By: wseegers <wseegers@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/08 18:13:02 by wseegers          #+#    #+#             */
-/*   Updated: 2018/08/08 18:13:29 by wseegers         ###   ########.fr       */
+/*   Updated: 2018/08/08 21:26:48 by wseegers         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,5 @@ double	vec3_length2(t_vec3 v)
 	x = v.x;
 	y = v.y;
 	z = v.z;
-
 	return (x * x + y * y + z * z);
 }

@@ -6,7 +6,7 @@
 /*   By: wseegers <wseegers@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/08 19:15:38 by wseegers          #+#    #+#             */
-/*   Updated: 2018/08/08 19:26:33 by wseegers         ###   ########.fr       */
+/*   Updated: 2018/08/08 21:27:19 by wseegers         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define LIBMAT_H
 
 # include "../vec3/vec3.h"
-# include "../mat3/mat3.h"
 # include "../mat4/mat4.h"
 
 #endif

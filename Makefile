@@ -6,7 +6,7 @@
 #    By: wseegers <wseegers@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/08/08 17:26:49 by wseegers          #+#    #+#              #
-#    Updated: 2018/08/08 19:09:51 by wseegers         ###   ########.fr        #
+#    Updated: 2018/08/08 19:28:19 by wseegers         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,7 @@ MAT4_SRC = mat4_create.c mat4_determinant.c mat4_frustum.c mat4_init.c\
 		   mat4_inverse.c mat4_look_at.c mat4_multiply.c mat4_print.c\
 		   mat4_rotate.c mat4_rotate_unit_axis.c mat4_scale.c mat4_to_mat3.c\
 		   mat4_to_rotation_mat.c mat4_translate.c mat4_transpose.c
-MAT4 = $(addprefix vec3/, $(MAT4_SRC))
+MAT4 = $(addprefix mat4/, $(MAT4_SRC))
 
 OBJ_LIST = $(patsubst %.c, %.o, $(VEC3) $(MAT4))
 BIN_PATH = bin
