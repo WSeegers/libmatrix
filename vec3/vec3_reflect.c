@@ -1,16 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   quat.h                                             :+:      :+:    :+:   */
+/*   vec3_reflect.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wseegers <wseegers.mauws@gmail.com>        +#+  +:+       +#+        */
+/*   By: wseegers <wseegers@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/08/04 15:05:40 by wseegers          #+#    #+#             */
-/*   Updated: 2018/08/04 22:25:29 by wseegers         ###   ########.fr       */
+/*   Created: 2018/08/08 18:19:31 by wseegers          #+#    #+#             */
+/*   Updated: 2018/08/08 18:19:50 by wseegers         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef VEC4_H
-# define VEC4_H
+#include "vec3.h"
 
-#endif
+t_vec3	vec3_reflect(t_vec3 i, t_vec3 normal)
+{
+	normal = vec3_normalize(normal);
+	return (vec3_subtract(i, vec3_scale(2 * vec3_dot(i, normal), normal)));
+}
