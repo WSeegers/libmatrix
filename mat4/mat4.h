@@ -6,7 +6,7 @@
 /*   By: wseegers <wseegers@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/04 14:35:41 by wseegers          #+#    #+#             */
-/*   Updated: 2018/08/08 19:30:04 by wseegers         ###   ########.fr       */
+/*   Updated: 2018/08/08 21:35:19 by wseegers         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@
 
 typedef struct s_mat4		t_mat4;
 typedef struct s_vec3		t_vec3;
+typedef struct s_mat3		t_mat3;
 typedef struct s_frustum	t_frustum;
 
 t_mat4	*mat4_create(void);
